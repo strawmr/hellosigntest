@@ -6,29 +6,14 @@
 
 <script>
   function myFunction(){
-    HelloSign.init("e8bef94dd5a2e23cf4e32bfd9de4fd4a");
-    HelloSign.open({
-        url: "https://app.hellosign.com/editor/embeddedSign?signature_id=616629ed37f8588d28600be17ab5d6b7&token=b6b8e7deaf8f0b95c029dca049356d4a2cf9710a",
-        allowCancel: true,
-        messageListener: function(eventData) {
-          //   l("Got message data: " + JSON.stringify(eventData));
-
-          //   if (eventData.event == HelloSign.EVENT_SIGNED) {
-          //     //do something for document getting signed
-          //   }
-          //   else if (eventData.event == HelloSign.EVENT_CANCELED) {
-          // //do something else for document closing before getting signed
-          //   }
-          //   else if (eventData.event == HelloSign.EVENT_ERROR) {
-          // //do something for an error situation
-          //   }
-          //   else if (eventData.event == HelloSign.EVENT_SENT) {
-          // //not used in this example
-          // //only used for embedded requesting
-          //   }
-
-        }
-    });
-}
+  HelloSign.init("b283237461ddc11a6425aa0fe2cf262d");
+  HelloSign.open({
+      url: "https://app.hellosign.com/editor/embeddedSign?%20signature_id=78caf2a1d01cd39cea2bc1cbb340dac3&%20token=b6b8e7deaf8f0b95c029dca049356d4a2cf9710a",
+      uxVersion: 2,
+      allowCancel: true,
+      messageListener: function(eventData) {
+          // do something
+      }
+  });}
 
 </script>
