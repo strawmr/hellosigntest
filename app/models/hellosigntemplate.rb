@@ -13,3 +13,6 @@ client.create_embedded_signature_request_with_template(
         }
     ]
 )
+
+client.get_embedded_sign_url :signature_id => '78caf2a1d01cd39cea2bc1cbb340dac3'
+
