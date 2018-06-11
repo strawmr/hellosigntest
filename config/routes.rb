@@ -3,4 +3,13 @@ Rails.application.routes.draw do
   #
   root "pages#home"
   get 'pages/home', to: 'pages#home'
+
+  Rails.application.routes.draw do  post '/signatures/callbacks', to: 'signatures#callbacks' end
+
+  Rails.application.routes.draw do
+    resources :signatures, only: [:new, :create] do collection do post 'callbacks'
+         end
+          end
+           end
+
 end
