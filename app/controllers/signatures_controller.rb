@@ -12,7 +12,7 @@ end
 
 def create
 embedded_request = create_embedded_request(name: params[:name], email: params[:email])
-@sign_url = get_sign_url(embedded_request)
+@sign_url = HelloSign.get_embedded_sign_url(signature_id: sign_id).sign_url
 render :embedded_signature
 end
 
