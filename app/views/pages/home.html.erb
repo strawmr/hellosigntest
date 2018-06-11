@@ -6,9 +6,9 @@
 
 <script>
   function myFunction(){
-    HelloSign.init("e8bef94dd5a2e23cf4e32bfd9de4fd4a");
+    HelloSign.init("b283237461ddc11a6425aa0fe2cf262d");
     HelloSign.open({
-        url: "https://app.hellosign.com/editor/embeddedSign?signature_id=616629ed37f8588d28600be17ab5d6b7&token=b6b8e7deaf8f0b95c029dca049356d4a2cf9710a",
+        url: "SIGN_URL",
         allowCancel: true,
         messageListener: function(eventData) {
             l("Got message data: " + JSON.stringify(eventData));
