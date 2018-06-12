@@ -1,6 +1,5 @@
 
 
-<body>
   <h2>Form</h2>
 
   <script type="text/javascript" src="https://s3.amazonaws.com/cdn.hellosign.com/public/js/hellosign-embedded.LATEST.min.js"></script>
@@ -8,7 +7,7 @@
   <script>
       HelloSign.init("b283237461ddc11a6425aa0fe2cf262d");
       HelloSign.open({
-          url: <%= @sign_url %>
+          url: <%= @sign_url %>,
           allowCancel: true,
           messageListener: function(eventData) {
               l("Got message data: " + JSON.stringify(eventData));
@@ -35,4 +34,3 @@
 
   </script>
 
-</body>
