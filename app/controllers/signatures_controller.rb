@@ -18,7 +18,7 @@ end
 def create
 embedded_request = create_embedded_request(name: params[:name], email: params[:email])
 @sign_url = get_sign_url(embedded_request)
-# render :embedded_signature
+render :embedded_signature
 end
 
 private
